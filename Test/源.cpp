@@ -22,7 +22,7 @@ struct Person2 {
 	int number;
 };
 int main() {
-	
+	system ("pause");
 }
 	
 
