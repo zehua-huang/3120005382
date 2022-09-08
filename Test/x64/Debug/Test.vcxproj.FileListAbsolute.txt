@@ -1,0 +1,2 @@
+C:\Users\JZX\软件工程作业\Test\x64\Debug\Test.exe
+C:\Users\JZX\软件工程作业\Test\x64\Debug\Test.pdb

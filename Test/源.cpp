@@ -1,29 +1,31 @@
 #include<iostream>
 #include<string>
 #include<ctime>
+#include<fstream>
 using namespace std;
 
-const double pi = 3.14;
-
-class Person1 {
-public:
-	void setName(string name) {
-		this->name = name;
-	}
-	string getName() {
-		return name;
-	}
-private:
-	string name;
-	int age;
-	string lover;
-};
-struct Person2 {
-	int number;
-};
-int main() {
-	system ("pause");
+void test() {
+	ofstream of;
+	of.open("test.txt", ios::out);
+	of << "asvf" << endl;
+	of << "sada" << endl;
+	of.close();
 }
-	
+void test2() {
+	ifstream if1;
+	if1.open("test.txt", ios::in);
+	if (if1.is_open() == 0) {
+		cout << "打开失败";
+	}
+	char buf[1000] = {0};
+	while (if1 >> buf) {
+
+	}
+}
+int main() {
+	test();
+	system("pause");
+	return 0;
+}
 
 
